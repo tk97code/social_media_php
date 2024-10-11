@@ -11,7 +11,7 @@ const host = 'localhost';
 const user = 'root';
 const passw = '';
 const db = 'lipho';
-const port = 3307;
+const port = 3306;
 
 class DBConnection
 {
@@ -301,8 +301,8 @@ class DBConnection
         return $result['image'];
     }
 
-    public function getPostDetail($postId) {
-        $stmt = $this->conn->prepare(QUERIES['get_post_detail']);
+    public function getPostInfo($postId) {
+        $stmt = $this->conn->prepare(QUERIES['get_post_info']);
         $stmt->bind_param("i", $postId);
         $stmt->execute();
         $result = $stmt->get_result()->fetch_assoc();

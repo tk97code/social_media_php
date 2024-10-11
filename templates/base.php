@@ -49,6 +49,7 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<!-- <script src=""></script> -->
 <script src="js/push-notifications.js"></script>
 <?php
 if (isset($templateParams["scripts"])) {

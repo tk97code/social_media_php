@@ -99,8 +99,8 @@ if (isset($_POST['getPostFirstImage'])) {
     echo json_encode($image);
 }
 
-if (isset($_POST['getPostDetail'])) {
-    $post = $dbconnection->getPostDetail(postId: $_POST['postId']);
+if (isset($_POST['getPostInfo'])) {
+    $post = $dbconnection->getPostInfo(postId: $_POST['postId']);
     echo json_encode($post);
 }
 
